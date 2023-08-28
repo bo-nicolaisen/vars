@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/site.css">
+
+    <script src="assets/js/site.js" defer></script>
+
+</head>
+
+<body>
+
+    <h1>Console Metoder i JavaScript</h1>
+
+    <h2>console.log()</h2>
+    <p>Bruges til at logge meddelelser eller variabler til konsollen.</p>
+    <pre>
+            <code>
+    console.log("Dette er en log-meddelelse.");
+            </code>
+        </pre>
+
+    <h2>console.error()</h2>
+    <p>Bruges til at logge fejlmeddelelser.</p>
+    <pre>
+            <code>
+    console.error("Dette er en fejlmeddelelse.");
+            </code>
+        </pre>
+
+    <h2>console.warn()</h2>
+    <p>Bruges til at logge advarsler.</p>
+    <pre>
+            <code>
+    console.warn("Dette er en advarsel.");
+            </code>
+        </pre>
+
+    <h2>console.info()</h2>
+    <p>Bruges til at logge informationsmeddelelser.</p>
+    <pre>
+            <code>
+    console.info("Dette er en informationsmeddelelse.");
+            </code>
+        </pre>
+
+    <h2>console.debug()</h2>
+    <p>Bruges til at logge meddelelser til fejlfinding.</p>
+    <pre>
+            <code>
+    console.debug("Dette er en debugging-meddelelse.");
+            </code>
+        </pre>
+
+    <h2>console.group() og console.groupEnd()</h2>
+    <p>Grupperer relaterede logmeddelelser sammen for bedre organisering.</p>
+    <pre>
+            <code>
+    console.group("Gruppe A");
+    console.log("Besked 1 i Gruppe A");
+    console.log("Besked 2 i Gruppe A");
+    console.groupEnd();
+            </code>
+        </pre>
+
+    <h2>console.table()</h2>
+    <p>Viser data i en tabelformat i konsollen.</p>
+    <pre>
+            <code>
+    const data = [
+      { Navn: "Alice", Alder: 30 },
+      { Navn: "Bob", Alder: 25 },
+    ];
+    console.table(data);
+            </code>
+        </pre>
+
+    <h2>console.clear()</h2>
+    <p>Rydder konsollen for tidligere logmeddelelser og giver en ren konsol.</p>
+    <pre>
+            <code>
+    console.clear();
+            </code>
+        </pre>
+
+    <h2>console.time() og console.timeEnd()</h2>
+    <p>Bruges til at måle, hvor lang tid det tager at udføre en kodeblok.</p>
+    <pre>
+            <code>
+    console.time("Tidtagning");
+    // Kode, der skal måles
+    console.timeEnd("Tidtagning");
+            </code>
+        </pre>
+
+    <h2>console.count()</h2>
+    <p>Holder styr på, hvor mange gange det er blevet kaldt med det angivne etiket og viser tællingen i konsollen.</p>
+    <pre>
+            <code>
+    console.count("Tæller");
+    console.count("Tæller");
+    console.count("En anden tæller");
+            </code>
+        </pre>
+
+    <h2>console.assert()</h2>
+    <p>Tester en påstand og udløser en fejlmeddelelse, hvis påstanden er falsk.</p>
+    <pre>
+            <code>
+    const x = 5;
+    console.assert(x === 10, "x er ikke lig med 10");
+            </code>
+        </pre>
+
+    <h2>console.trace()</h2>
+    <p>Viser en staksporing i konsollen for at se, hvor en bestemt funktion blev kaldt fra.</p>
+    <pre>
+            <code>
+    function a() {
+      b();
+    }
+    
+    function b() {
+      console.trace("Staksporing fra funktionen b");
+    }
+    
+    a();
+            </code>
+        </pre>
+
+
+
+
+</body>
+
+</html>
